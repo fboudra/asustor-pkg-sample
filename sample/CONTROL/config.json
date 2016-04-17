@@ -1,0 +1,48 @@
+{
+  "general": {
+    "package": "sample",
+    "name": "#PACKAGE#",
+    "version": "1.0",
+    "depends": [
+      "xorg (>= 10.14.6.377)"
+    ],
+    "conflicts": [],
+    "developer": "ASUSTOR",
+    "maintainer": "#USERNAME#",
+    "email": "#EMAIL#",
+    "website": "url://example.com",
+    "architecture": "x86-64",
+    "firmware": "2.5.0",
+    "model": [
+      "50xx",
+      "51xx"
+    ]
+  },
+  "adm-desktop": {
+    "app": {
+      "type": "webserver",
+      "session-id": true
+    },
+    "privilege": {
+      "accessible": "users",
+      "customizable": true
+    }
+  },
+  "register": {
+    "share-folder": [
+      {
+        "name": "Video",
+        "description": "Media Station default shared folder"
+      }
+    ],
+    "prerequisites": {
+      "enable-service": [],
+      "restart-service": []
+    },
+    "boot-priority": {
+      "start-order": 20,
+      "stop-order": 80
+    },
+    "port": []
+  }
+}

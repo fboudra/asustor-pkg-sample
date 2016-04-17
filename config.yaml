@@ -1,0 +1,49 @@
+# Mandatory section
+# This section contains the information about the package
+# and will be displayed in App Central.
+general:
+  package: 'sample'
+  name: '#PACKAGE#'
+  version: '1.0'
+  depends:
+  - 'xorg (>= 10.14.6.377)'
+  conflicts: []
+  developer: 'ASUSTOR'
+  email: '#EMAIL#'
+  website: 'url://example.com'
+  architecture: 'x86-64'
+  firmware: '2.5.0'
+  maintainer: '#USERNAME#'
+  model:
+  - '50xx'
+  - '51xx'
+
+# Optional section
+# This section defines the type of this app.
+adm-desktop:
+  app:
+    # Web apps
+    type: 'webserver'
+    session-id: true
+    # Custom apps
+    #type: 'custom'
+    #protocol: 'http'
+    #port: 39876
+    #url: '/'
+  privilege:
+    accessible: 'users'
+    customizable: true
+
+# Option section
+# This section is used for installation.
+register:
+  share-folder:
+  - description: 'Media Station default shared folder'
+    name: 'Video'
+  prerequisites:
+    enable-service: []
+    restart-service: []
+  boot-priority:
+    start-order: 20
+    stop-order: 80
+  port: []

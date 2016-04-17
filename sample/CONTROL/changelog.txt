@@ -1,0 +1,5 @@
+#PACKAGE# (#VERSION#)
+
+  * Initial release.
+
+ -- #USERNAME# <#EMAIL#>  #DATE#
